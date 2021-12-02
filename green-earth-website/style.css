@@ -1,0 +1,303 @@
+body{
+    margin: 0;
+	padding: 0;
+	background-color: #333;
+    background: url(coverpng);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	font-family:sans-serif;
+}
+
+h1{
+	margin: 0;
+
+}	
+#header{
+	   background-color:  transparent,#006600;
+	   background-image: url(environment-759.jpg);
+	   background-size: cover;
+	   background-position: top;
+	   background-attachment: fixed;
+	   background-repeat: no-repeat;
+	   font-size: large;
+	   font-family: georgia;
+	   font-variant: small-caps;
+	   color : #003300;
+	   text-align: left;
+	   padding-bottom: 20px;
+	   padding-right: 20px;
+	   
+}
+.logo{
+	  margin-top:10px;
+	  width: 156px;
+	  height: 96px;
+	  position: left;
+      
+} 
+a:hover { color: #00FF00; font-family: forte; }
+a{color : #003300;} 
+
+#content{
+	margin-left: 0px;
+	margin-right: 100px;
+	font-family: corbel;
+	font-size: 30px;
+    height: 1200px;	
+}
+.titles{
+	font-family: Broadway;
+	/*font-size: 40px;
+    background-color: #00b200;*/ 	
+}
+#main{
+	float: top;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+#contenu{
+	margin-left: 100px;
+	margin-right: 100px;
+	font-family: corbel;
+	font-size: 30px;
+	padding-left:250px;
+	
+}
+#nav{
+	padding-top: none;
+	float: left;
+	width: 350px;
+    height:1200px;	
+	background-image: url(img7.png);
+}
+#nav h3{
+	font-family: "Bauhaus 93";
+}
+#nav a:hover{
+	color:;
+	
+}
+#footer{
+	height: 500px;
+	background-color: transparent,#191919;
+	color: white;
+	background-image: url(thumbnailimage.img_.jpg);
+	text-align:bottom-right;
+	padding: 10px;
+	margin: 0;
+	float: bottom;
+	
+}
+.copyright{
+	font-size: 10px;
+	font-family: berlin-sans-fb;
+	color: #EEE;
+	text-align:center;
+}
+
+/*slider*/
+.slider-holder{
+    width: 1349px;
+    height: 450px;
+    background-color: yellow;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    text-align: center;
+    overflow: hidden;
+	border-radius: 0px;
+}
+        
+.image-holder{
+    width: 5400px;
+    background-color: red;
+    height: 450px;
+    clear: both;
+    position: relative;
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+    transition: left 2s;
+}
+        
+.slider-image
+        {
+            float: left;
+            margin: 0px;
+            padding: 0px;
+            position: relative;
+			height: 450px;
+        }
+        
+#slider-image-1:target ~ .image-holder
+        {
+            left: 0px;
+        }
+        
+#slider-image-2:target ~ .image-holder
+        {
+            left: -1349px;
+        }
+        
+#slider-image-3:target ~ .image-holder
+        {
+            left: -2698px;
+        }
+		
+#slider-image-4:target ~ .image-holder
+		{
+			left: -4047px;
+		}
+.button-holder
+        {
+            position: relative;
+            top: -20px;
+        }
+.slider-change
+        {
+            display: inline-block;
+            height: 10px;
+            width: 10px;
+            border-radius: 5px;
+            background-color: brown;
+        }
+#presentation{
+		 background-image: url(visu-nos-entrepreneurs-incubes.jpg);
+		 background-size: cover;
+		 height: 400px;
+         position: center;
+         font-family: "Century Gothic";		 
+	}
+#presentation h1{
+		color: black;
+		font-size: 40px;
+	}
+#bas{
+	padding-top: 100px;
+	width: 1000px;
+	margin: auto;
+	font-family: "Century Gothic";	
+}
+#contact{
+	margin: auto;
+	font-family:  "Century Gothic";
+}
+
+/**/
+.content_mainp {
+	display: inline-block;
+}
+.contentmodif {
+	position: absolute;
+	top: -300px;
+	margin-left: 20px;
+	min-width: 20%;
+	padding-top: 750px;
+	}
+.contentmodif p{
+	text-indent: 20px;
+	text-align: left;
+	font-family: "MS Serif", "New York", serif;
+	font-size: 18px;
+	max-width: 60%;
+}
+#item1 {
+	opacity:0;
+}
+#item2 {
+	visibility: hidden;
+}
+#item1:target {
+	opacity: 1;
+}
+#item1:target ~ .contentmodif {
+	visibility: hidden;
+}
+#item2:target {
+	visibility: visible;
+}
+#item2:target~ .contentmodif {
+	visibility: hidden;
+}
+#item3{
+	visibility: hidden;
+}
+#item4{
+	visibility: hidden;
+}
+#item5{
+	visibility: hidden;
+}
+#item6{
+	visibility: hidden;
+}
+#item3:target{
+	visibility:visible;
+}
+#item4:target{
+	visibility:visible;
+}
+#item5:target{
+	visibility:visible;
+}
+#item6:target{
+	visibility:visible;
+}
+#item3:target ~ .contentmodif{
+	visibility: hidden;
+}
+#item4:target ~ .contentmodif{
+	visibility: hidden;
+}
+#item5:target ~ .contentmodif{
+	visibility: hidden;
+}
+#item6:target ~ .contentmodif{
+	visibility: hidden;
+}
+.menusec a {
+	font-family: "Times New Roman", Times, serif;
+	font-size: large;
+	font-style: italic;
+}
+.menusec a:hover
+{
+text-shadow: 0.5px 1px;}
+.imgs img{
+	border-radius: 50px;
+	width: 300px;
+	height: 150px;
+}
+#contacten{
+	font-family: "Century Gothic";
+}
+#heading{
+	width: 1349px;
+	height: 400px;
+	background-image: url(cover.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: "Century Gothic";
+	color: white;
+}
+#heading h1{
+	font-family: "Century Gothic";
+	color: white;
+	font-size: 50px;
+}
+.site{
+	font-family:"Times New Roman", Times, serif;
+	font-size: 20px;
+}
+.mg img{
+	border-radius: 40px;
+	height:250px;
+	width:300 px;
+}
+.it{
+	border-radius: 40px;
+	width:300px;
+	height:450px;
+}
